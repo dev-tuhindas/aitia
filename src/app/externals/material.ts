@@ -9,6 +9,7 @@ Description
 -----------
 This class should be use to export any material module into the app.
 
+**Note : Dont include unused modules.
 */
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
