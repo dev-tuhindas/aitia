@@ -20,18 +20,32 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import 
 {
+  MatButtonModule,
+  MatProgressSpinnerModule,
+  MatCardModule,
+  MatGridListModule,
+  MatTableModule,
+  MatTableDataSource
 }  from '@angular/material';
+import {CdkTableModule} from '@angular/cdk/table';
 
 
 @NgModule({
 exports:
-        [
+	[
+	  MatButtonModule,
+	  MatProgressSpinnerModule,
+	  MatCardModule,
+	  MatGridListModule,
+	  MatTableModule,
+	    MatTableDataSource
 	],
 	imports: [
 	  BrowserModule,
 	  BrowserAnimationsModule,
           FormsModule,
 	  ReactiveFormsModule
+
 				      ],
 	  })
 

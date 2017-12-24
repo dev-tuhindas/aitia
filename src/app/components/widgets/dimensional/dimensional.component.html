@@ -1,0 +1,35 @@
+<!-- Dimensional Widget Template v0.0.1
+   
+Dimensional Widgets are widgets with information with respect to a dimension this could be browser or may be location.
+
+TODO : Multidimensional Widget like browser + os or browser + device 
+
+-->
+<div>
+<mat-card>
+  <mat-card-header style='margin-bottom:5px;'>
+  Top Browser(s)
+  </mat-card-header>
+
+  <mat-card-content>
+     <hr style='width:100%'>
+     <mat-progress-spinner [mode]="'indeterminate'">
+     </mat-progress-spinner>
+
+     <mat-table #table [dataSource]="dataSource">
+       <ng-container matColumnDef="Browser">
+	  <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+       </ng-container>
+
+       <ng-container matColumnDef="Session(s)">
+          <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+	  <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
+       </ng-container>
+     </mat-table>	    
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-card-content>
+</mat-card>
+</div>

@@ -1,0 +1,19 @@
+<!-- Parent Container of the whole application
+
+This template is crucial to the application and avoid frequent changes 
+It should only have following sections : 
+
+a. top-nav 
+b. side-nav (flexible to the current route)
+c. router-outlet
+
+Note : 
+1. Use a certain padding-top in the components to be put in router outlet as top nav will overshadow some part at the 
+   top.
+   padding-top would be 8px(padding-top) + 8px(padding-bottom) + 21px(icon-font-size) = 37px
+
+-->
+
+
+<app-topnav></app-topnav>
+<router-outlet></router-outlet>

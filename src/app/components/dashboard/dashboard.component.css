@@ -1,0 +1,10 @@
+.dashboard-container
+{
+        padding-top: 46px;
+        border: 2px solid;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	background: rgb(250, 250, 250);
+}

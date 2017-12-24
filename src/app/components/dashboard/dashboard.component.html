@@ -1,0 +1,25 @@
+<!-- Dashboard Template 
+     This template will act as a container for crucial data widgets.
+
+     TODO : user customizable dashboard once basic dashboard is done which will be the default dashboard 
+            in case of zero configured application.
+-->
+
+<div class='dashboard-container'>
+	<mat-grid-list cols="6">
+		 <mat-grid-tile
+			       [colspan]="'1'"
+			       [rowspan]="'1'"
+		>  <app-dimensional></app-dimensional>
+			        </mat-grid-tile>
+				<mat-grid-tile
+					                               [colspan]="'1'"                               [rowspan]="'1'"
+		              >  <app-dimensional></app-dimensional>
+					                                </mat-grid-tile>
+									<mat-grid-tile
+										                               [colspan]="'1'"
+		                              [rowspan]="'1'"
+		                >  <app-dimensional></app-dimensional>
+										                                </mat-grid-tile>
+	</mat-grid-list>
+</div>
